@@ -9,12 +9,14 @@ $this->load->library('form_validation');
 }
 public function index()
 {
-$data = array('title' => 'View Data User','user' => $this->User_model->getAll(),'content'=> 'admin/user/index');
+$data = array('title' => 'View Data User','user' => $this->User_model->getAll(),
+'content'=> 'admin/user/index');
 $this->load->view('admin/template/main',$data);
 }
 public function add()
 {
-$data = array('title' => 'Tambah Data User','content'=> 'admin/user/add_form');
+$data = array('title' => 'Tambah Data User',
+'content'=> 'admin/user/add_form');
 $this->load->view('admin/template/main',$data);
 }
 public function save()

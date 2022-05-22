@@ -32,8 +32,7 @@ $data = array('username' => htmlspecialchars($this->input->post('username'), tru
 'phone' => htmlspecialchars($this->input->post('phone'), true),
 'role' => htmlspecialchars($this->input->post('role'), true),
 'is_active' => 1,);
-return $this->db->set($data)->where($this->primary,$id)->update($this->_table);
-    
+return $this->db->set($data)->where($this->primary,$id)->update($this->_table); 
 // if($this->db->affected_rows()>0){
 // $this->session->set_flashdata("success","Data user Berhasil DiUpdate");
 // }
